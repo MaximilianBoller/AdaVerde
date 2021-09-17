@@ -150,7 +150,7 @@ h3{
     background-size: cover;
 
     margin: 0rem 0rem;
-    padding: 4rem 1rem 4rem 1rem;
+    padding: 8rem 1rem 8rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,7 +187,13 @@ h3{
 
 
 
-
+.activity-text{
+    font-family: 'stenberg', sans-serif;
+    color: black;
+    text-align: center;
+    max-width: 100%;
+    margin: 0rem auto;
+}
 
 
 
@@ -195,6 +201,21 @@ h3{
     display: flex;
     flex-direction: column;
 
+}
+
+.activity-card-background-image,
+.offering-card-background-image {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 20rem;
+}
+
+.activity-card{
+    margin: 4rem 0rem 4rem 0rem;
 }
 
 
@@ -251,42 +272,6 @@ hero section
     filter: drop-shadow(.25rem .25rem .5rem gray);
 
 }
-
-
-.haus-papagai-card-background-image{
-    background-image: linear-gradient( to top, rgba(0,0,0, 0.5), rgba(0,0,0,0.5)), url("images/haus-papagai-background.jpg");
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    width: 100%;
-    height: 20rem;
-}
-
-.haus-tukan-card-background-image{
-    background-image: linear-gradient( to top, rgba(0,0,0, 0.5), rgba(0,0,0,0.5)), url("images/haus-tukan-background.jpg");
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    width: 100%;
-    height: 20rem;
-}
-
-.zeltplatz-gürteltier-card-background-image{
-    background-image: linear-gradient( to top, rgba(0,0,0, 0.5), rgba(0,0,0,0.5)), url("images/zeltplatz-gürteltier-background.jpg");
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    width: 100%;
-    height: 20rem;
-}
-
-
 
 
 
@@ -347,6 +332,28 @@ hero section
         width: 1080px;
         max-width: 90%;
         margin: 0 auto;
+    }
+
+
+
+
+
+    /* activity cards*/
+
+    .activity-card{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card-description > h1{
+        border-left: solid var(--primary) 5px;
+    }
+
+    .activity-text{
+        text-align: left;
+        margin-left: 4rem;
+
     }
 
 
