@@ -63,6 +63,8 @@ h3{
 }
 
 .header{
+    filter: drop-shadow(0rem .25rem .5rem rgba(10, 10, 10, 0.2));
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -147,7 +149,7 @@ h3{
     background-repeat: no-repeat;
     background-size: cover;
 
-    height: calc(100vh - 12rem);
+    height: 80vh;
     margin: 0rem 0rem;
     padding: 4rem 1rem 4rem 1rem;
     display: flex;
