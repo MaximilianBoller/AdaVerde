@@ -197,6 +197,7 @@ h3{
 
 
 
+
 .offering-card-section{
     display: flex;
     flex-direction: column;
@@ -214,10 +215,14 @@ h3{
     height: 20rem;
 }
 
-.activity-card{
-    margin: 4rem 0rem 4rem 0rem;
+.activity-card-left, .activity-card-right{
+    padding: 2rem 0rem 2rem 0rem;
+    border: gray solid 1px;
 }
 
+.card-description{
+    padding: 1rem;
+}
 
 /*
 hero section
@@ -319,7 +324,6 @@ hero section
 
 
 
-
     .call-to-action{
         margin: 2rem;
     }
@@ -340,20 +344,32 @@ hero section
 
     /* activity cards*/
 
-    .activity-card{
+    .activity-card-right{
         display:flex;
         flex-direction: row;
         align-items: center;
+        flex-shrink: 0.5;
+    }
+
+    .activity-card-left{
+        display:flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        flex-shrink: 0.5;
+    }
+
+
+
+    .activity-card-left > *{
+        flex: 1;
+    }
+
+    .activity-card-right > *{
+        flex: 1;
     }
 
     .card-description > h1{
         border-left: solid var(--primary) 5px;
-    }
-
-    .activity-text{
-        text-align: left;
-        margin-left: 4rem;
-
     }
 
 
