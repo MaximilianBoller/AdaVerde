@@ -271,12 +271,7 @@ h3{
     background-color:var(--primary);
 }
 
-.social-media{
-    display: flex;
-    justify-content: space-evenly;
-    border: solid red 1px;
-    width: 100%;
-}
+
 
 .footer > *{
     flex: 1;
@@ -367,9 +362,5 @@ h3{
         flex-direction: row;
     }
 
-    .icon-line{
-        display: flex;
-        justify-content: space-evenly;
 
-    }
 }
