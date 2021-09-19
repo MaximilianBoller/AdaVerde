@@ -213,6 +213,12 @@ h3{
 
 
 
+/*location-plan*/
+.location-plan{
+    padding: 4rem 0rem 4rem 0rem;
+
+    border: solid red 1px;
+}
 
 
 
@@ -297,11 +303,9 @@ h3{
         display: flex;
     }
 
+
+
     /* offering */
-
-
-
-
     .button-section{
         display: flex;
         flex-direction: column;
@@ -327,19 +331,18 @@ h3{
 
 
     /* activity */
-
     .activity-card-right{
         display:flex;
         flex-direction: row;
         align-items: center;
-        flex-shrink: 0.5;
+
     }
 
     .activity-card-left{
         display:flex;
         flex-direction: row-reverse;
         align-items: center;
-        flex-shrink: 0.5;
+
     }
 
     .activity-text{
@@ -353,6 +356,8 @@ h3{
     .activity-card-right > *{
         flex: 1;
     }
+
+
 
 
 
