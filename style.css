@@ -14,11 +14,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
-
-
-
-
 :root{
     --backgroundBlack: #121212;
     --backgroundGray: #292929;
@@ -33,43 +28,6 @@
 
 }
 
-.popout-menu{
-
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    justify-items: center;
-
-    z-index: 10;
-    background-color: var(--primary);
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .wrapper{
@@ -82,8 +40,11 @@ html{
     background-color: white;
 }
 
-h1{
 
+
+
+/* headings */
+h1{
     padding: 1rem;
     font-weight: 500;
     font-size: clamp(3rem, 5vw, 4rem);
@@ -101,14 +62,36 @@ h3{
     font-size: clamp(1rem, 5vw, 1,5rem);
 }
 
+
+
+/* header menu mobile*/
+.popout-menu{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+
+    z-index: 10;
+    background-color: var(--primary);
+}
+
+
+/* header desktop*/
 .header{
-    filter: drop-shadow(0rem .25rem .5rem rgba(10, 10, 10, 0.2));
+    
+    /*filter: drop-shadow(0rem .25rem .5rem rgba(10, 10, 10, 0.2));*/
 
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color:var(--primary);
 }
+
+
 
 .menu{
     display: flex;
@@ -134,10 +117,6 @@ h3{
     display: none;
 }
 
-
-
-
-
 .logo ,.hamburger{
     min-width: 2rem;
     min-height: 2rem;
@@ -146,7 +125,7 @@ h3{
     border: white solid 0px;
     margin: 0.5rem;
     padding: 0.5rem;
-    border-radius: 50%;
+    border-radius: 50%; 
 }
 
 .logo:hover ,.hamburger:hover{
@@ -154,35 +133,24 @@ h3{
     cursor: pointer;
 }
 
-
-
-
-
 .header-background{
     background-color:var(--primary);
 }
 
-.hero-text{
-    font-family: 'stenberg', sans-serif;
-    color: white;
-    text-align: center;
-}
-
-.offering-text{
-    font-family: 'stenberg', sans-serif;
-    color: black;
-    text-align: center;
-    max-width: 100%;
-    margin: 0rem auto;
-}
-
-.offering-section{
-    padding: 4rem 0rem 4rem 0rem;
-}
 
 
+
+
+
+
+
+
+
+
+
+
+/* hero */
 .hero-section{
-    background-image: linear-gradient( to top, rgba(0,0,0, 0.5), rgba(0,0,0,0.5)), url("images/hero-background.jpg");
 
     background-position: center;
     background-repeat: no-repeat;
@@ -194,6 +162,14 @@ h3{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    border: solid red 1px;
+}
+
+.hero-text{
+    font-family: 'stenberg', sans-serif;
+    color: white;
+    text-align: center;
 }
 
 .hero-logo{
@@ -206,25 +182,47 @@ h3{
     background-color: white;
     border-radius: 50%;
 
-    margin: 1rem;
-}
+    margin-bottom: 4rem;
 
-.call-to-action-button{
-    font-size: 1rem;
-    margin: 1rem;
-    padding: 0.5rem 1.5rem;
-    background-color:var(--primary);
-    color: var(--primaryVariant);
-    border: black solid 0px;
-}
-.call-to-action-button:hover{
-    background-color: var(--primaryVariant);
-    color: white;
-    cursor: pointer;
+    border: solid red 1px;
 }
 
 
 
+
+
+
+
+/* offering */
+.offering-section{
+    padding: 4rem 0rem 4rem 0rem;
+
+    border: solid red 1px;
+}
+
+.card-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.button-section{
+    display: flex;
+    border: solid blue 1px;
+
+}
+
+
+
+
+
+
+/* activitys */
+
+.activity-section{
+    padding: 4rem 0rem 4rem 0rem;
+
+    border: solid red 1px;
+}
 
 .activity-text{
     font-family: 'stenberg', sans-serif;
@@ -234,28 +232,8 @@ h3{
     margin: 0rem auto;
 }
 
-
-
-
-.offering-card-section{
-    display: flex;
-    flex-direction: column;
-
-}
-
-.activity-card-background-image,
-.offering-card-background-image {
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    width: 100%;
-    height: 20rem;
-}
-
 .activity-card-left, .activity-card-right{
-    margin: 1rem 0rem 1rem 0rem;
+    margin: 1rem;
     border: gray solid 1px;
 }
 
@@ -263,78 +241,51 @@ h3{
     padding: 1rem;
 }
 
-/*
-hero section
-*/
 
+/* call-to-action*/
+.call-to-action-section{
+    padding: 4rem 0rem 4rem 0rem;
 
-
-
-
-
-
-.about-us-section{
-    background-color:var(--backgroundBlack);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
+    border: solid red 1px;
 }
 
 
+/* footer */
+.footer{
+    
+    /*filter: drop-shadow(0rem .25rem .5rem rgba(10, 10, 10, 0.2));*/
 
-
-
-.call-to-action{
-    color: white;
-    margin: 2rem;
-
-}
-
-.hero-image{
-    height: 35vh;
-    width: 35vh;
-    margin: 2rem;
-
-}
-
-.about-us-image{
-    height: 35vh;
-    width: 35vh;
-    margin: 2rem;
-}
-
-
-.offering-card{
-    width: calc(100% -2rem);
-    background-color: white;
-    border: solid gray 1px;
     display: flex;
     flex-direction: column;
-    margin: 1rem;
-    filter: drop-shadow(.25rem .25rem .5rem gray);
-
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:var(--primary);
 }
 
-
-
-
-
-
-
-
-
-.card-icon{
-    position: relative;
-    height: 4rem;
-    width: 4rem;
-    top: 1rem;
-    left: calc(100% - 5rem);
-
+.footer-background{
+    background-color:var(--primary);
 }
 
+.social-media{
+    display: flex;
+    justify-content: space-evenly;
+    border: solid red 1px;
+    width: 100%;
+}
 
+.footer > *{
+    flex: 1;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+}
 
 
 
@@ -342,6 +293,7 @@ hero section
 @media only screen and (min-width: 900px) {
 
 
+    /* header */
     .hamburger{
         display: none;
     }
@@ -350,25 +302,19 @@ hero section
         display: flex;
     }
 
-    .offering-card{
-        width: calc((100%-8rem) / 3);
-    }
+    /* offering */
 
-    .offering-card-section{
-        width: 100%;
 
+
+
+    .button-section{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
-
 
 
     .call-to-action{
         margin: 2rem;
-    }
-
-    .offering-text{
-        max-width: 70%;
     }
 
     .wrapper{
@@ -385,7 +331,7 @@ hero section
 
 
 
-    /* activity cards*/
+    /* activity */
 
     .activity-card-right{
         display:flex;
@@ -413,7 +359,17 @@ hero section
         flex: 1;
     }
 
-    .card-description > h1{
-        border-left: solid var(--primary) 5px;
+
+
+    /* footer */
+    .footer{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .icon-line{
+        display: flex;
+        justify-content: space-evenly;
+
     }
 }
