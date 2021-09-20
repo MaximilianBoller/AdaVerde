@@ -7,6 +7,11 @@
 
 }
 
+@font-face {
+    font-family: nightclub;
+    src: url(fonts/Nightclub\ BTN\ Regular.ttf);
+}
+
 
 *{
     margin: 0;
@@ -173,6 +178,7 @@ h3{
 
 .hero-logo{
 
+    font-family: 'nightclub' sans-serif;
     min-height: 10rem;
     min-width: 10rem;
     height: 10rem;
