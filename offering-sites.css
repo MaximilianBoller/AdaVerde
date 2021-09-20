@@ -12,5 +12,9 @@
     flex-direction: column;
 }
 
+.image-viewer{
+    padding: 4rem 0rem 4rem 0rem;
+    border: solid red 1px;
+}
 
 
