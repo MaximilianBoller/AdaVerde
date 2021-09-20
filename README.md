@@ -1,3 +1,3 @@
 # AdaVerde
 
-This Repository is for aducational use only.
+This Repository is for educational use only.
